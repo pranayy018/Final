@@ -4,9 +4,11 @@
   "private": true,
   "dependencies": {
     "@openzeppelin/contracts": "^4.9.1",
+    "@react-login-page/page11": "^1.0.4",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "cloudinary": "^2.0.3",
     "dotenv": "^16.0.3",
     "hardhat": "^2.11.1",
     "lodash": "^4.17.21",
@@ -61,6 +63,7 @@
     "ethers": "^5.4.7",
     "hardhat-gas-reporter": "^1.0.8",
     "solidity-coverage": "^0.8.0",
+    "tailwindcss": "^3.4.3",
     "typechain": "^8.1.0"
   }
 }

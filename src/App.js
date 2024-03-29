@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Doctor, Patient, Register, Shell } from "./Container";
+import { Doctor, Patient, Register} from "./Container";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import {
@@ -12,6 +12,8 @@ import {
 } from "./Store/Interactions";
 import config from "./config.json";
 import { Alert } from "./Components";
+import Login from "./Container/Login/Login";
+import Home from "./Container/Home/Home";
 function App() {
   const dispatch = useDispatch();
   const loadBlockchainData = async () => {
@@ -35,12 +37,15 @@ function App() {
   });
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={<Shell />}></Route>
-        <Route path="/Patient" element={<Patient />}></Route>
-        <Route path="/Doctor" element={<Doctor />}></Route>
-      </Routes>
-      <Alert />
+        <Routes>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/signup" element={<Register />}></Route>
+          <Route path="/" element={<Home/>}></Route>
+          <Route path="/Patient" element={<Patient />}></Route>
+          <Route path="/Doctor" element={<Doctor />}></Route>
+        </Routes>
+          <Alert />
+
     </div>
   );
 }

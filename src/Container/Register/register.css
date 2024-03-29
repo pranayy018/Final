@@ -1,8 +1,5 @@
-body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .container {
+
+  .container{
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
@@ -29,13 +26,13 @@ body {
     width: 100%;
     padding: 5px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 1px;
   }
   
   .form-group button {
     width: 100%;
     padding: 8px;
-    background-color: #4CAF50;
+    background-color: #2f9adc;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -43,7 +40,7 @@ body {
   }
   
   .form-group button:hover {
-    background-color: #45a049;
+    background-color:#368bcb ;
   }
   
   /* Styles for select and option tags */
@@ -60,3 +57,7 @@ body {
     padding: 5px;
   }
   
+
+  .reg{
+    width: 400px;
+  }

@@ -1,31 +1,70 @@
-.navbar {
-    background-color: #555555;
-    color: #fff;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  .navbar-left {
-    margin-right: auto;
-  }
-  
-  .navbar-right {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .navbar a {
-    display: block;
-    padding: 12px;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .navbar a:hover {
-    background-color: #333;
-  }
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 20px;
+  position: sticky;
+}
+
+
+
+.logo{
+  width: 30px;
+  height: 30px;
+}
+
+.navbar-left{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-left a{
+  text-decoration: none;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+
+.navbar-right{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-weight: 600;
+}
+
+
+.register{
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  padding: 12px;
+  outline: 0;
+  border: 0;
+  border-radius: 12px;
+  background: #5D8DB1;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  text-decoration: none;
+  color: #fff;
+}
+
+.login{
+  text-decoration: none;
+  color: #000;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.login:hover{
+  background: #5D8DB1;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  padding:12px 20px;
+  transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}

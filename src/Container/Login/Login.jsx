@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./login.css";
+import down from "../../data/doc.png"
 import {
   checkDoctorAlreadyExists,
   checkPatientAlreadyExists,
@@ -44,29 +45,42 @@ const Login = () => {
     }
   };
   return (
-    <div className="container">
-      <h2>Login with web3 Swastchain</h2>
-      <form onSubmit={submitHandler}>
-        <div className="form-group">
-          <label>Login as :</label>
-          <select
-            name="loginAs"
-            onChange={(e) => setLoginType(e.target.value)}
-            value={loginType}
-          >
-            <option value="0" disabled>
-              Select type of registration
-            </option>
-            <option value="doctor">Doctor</option>
-            <option value="patient">Patient</option>
-          </select>
-        </div>
+    <div className="loginPage">
+      <div className="container-main" id="loginPage">
+        <h2 className="title">Login</h2>
+        <form onSubmit={submitHandler} className="form">
+          <div className="form-group">
+            <p>Are you a ?</p>
+            <div className="inputContainer">
+              <img className="down" alt="down-arrow" src={down}></img>
+              <select
+                name="loginAs"
+                onChange={(e) => setLoginType(e.target.value)}
+                value={loginType}
+              >
+                
+                <option value="0" disabled>
+                  Select type of registration
+                </option>
+                <option value="doctor">Doctor</option>
+                <option value="patient">Patient</option>
+              </select>
+            </div>
 
-        <div className="form-group">
-          <button type="submit">Login</button>
-        </div>
-      </form>
+          </div>
+
+          <div className="form-group">
+            <button type="submit">
+              <p class="btn2"><span class="spn2">Login</span></p>
+            </button>
+
+            <p className="para">Don't have an account? <a href="/signup">Sign Up.</a></p>
+          </div>
+        </form>
+      </div>
+
     </div>
+
   );
 };
 

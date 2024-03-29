@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./register.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { loadAccount, registerUser } from "../../Store/Interactions";
 import { useDispatch, useSelector } from "react-redux";
 const Register = () => {
@@ -54,7 +54,7 @@ const Register = () => {
 
   return (
     <div className="container">
-      <h2>Register with web3 Swastchain</h2>
+      <h2>Register </h2>
       <form onSubmit={submitHandler}>
         <div className="form-group">
           <label>Register as :</label>
@@ -89,7 +89,7 @@ const Register = () => {
               id="address"
               placeholder="34"
               onChange={(e) => setAge(e.target.value)}
-              value={age == 0 ? "" : age}
+              value={age === 0 ? "" : age}
               required
             />
             <label>Problem:</label>
