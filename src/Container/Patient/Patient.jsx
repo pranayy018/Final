@@ -1,4 +1,5 @@
 import React from "react";
+import Drive from "../../Components/Drive/Drive";
 import "./patient.css";
 import {
   CurrentEMRAccess,
@@ -14,6 +15,7 @@ const Patient = () => {
   return (
     <div>
       <PersonalInformation />
+      <Drive/>
       <ShareMedicalRecord />
       <CurrentEMRAccess />
     </div>

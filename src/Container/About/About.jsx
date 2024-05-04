@@ -1,5 +1,6 @@
 import React from 'react'
 import "./About.css"
+import Register from '../Register/Register'
 
 import scope from "../../data/stethoscope.png"
 
@@ -13,7 +14,9 @@ const About = () => {
             </p>
 
             <button className='signup'>
-                Sign Up Now!
+            <a href="/signup" className="register" onClick={() => <Register/>}>
+            Sign Up Now!
+            </a> 
             </button>
 
         </div>
